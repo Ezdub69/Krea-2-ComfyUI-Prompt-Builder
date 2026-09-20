@@ -1,0 +1,3605 @@
+[
+ {
+  "id": "Camera_Angles",
+  "source_file": "Camera/Camera_Angles.txt",
+  "display_name": "Camera Angles",
+  "section": "camera",
+  "slot": "angle",
+  "tier": "basic",
+  "group": "Angles and framing",
+  "group_rank": 26,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 11,
+  "notes": ""
+ },
+ {
+  "id": "Camera_FramingGuidence",
+  "source_file": "Camera/Camera_FramingGuidence.txt",
+  "display_name": "Framing Guidance",
+  "section": "camera",
+  "slot": "framing",
+  "tier": "detailed",
+  "group": "Angles and framing",
+  "group_rank": 26,
+  "facets": {},
+  "theme": [],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 68,
+  "notes": ""
+ },
+ {
+  "id": "Camera_MakesandLook",
+  "source_file": "Camera/Camera_MakesandLook.txt",
+  "display_name": "Camera Makes and Look",
+  "section": "camera",
+  "slot": "lens and film look",
+  "tier": "detailed",
+  "group": "Camera and film look",
+  "group_rank": 27,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 66,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_AltGirl",
+  "source_file": "Clothing/Clothing_AltGirl.txt",
+  "display_name": "Alt Girl",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "black": 68,
+    "pattern": 11,
+    "other": 7,
+    "grey": 3,
+    "blue": 2,
+    "metallic": 2,
+    "brown": 1
+   }
+  },
+  "theme": [
+   "alt-goth"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 94,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_AmericanCowGirlMidwestStyle",
+  "source_file": "Clothing/Clothing_AmericanCowGirlMidwestStyle.txt",
+  "display_name": "American Cow Girl Midwest Style",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "blue": 21,
+    "white": 17,
+    "red": 15,
+    "neutral": 13,
+    "black": 11,
+    "brown": 6,
+    "green": 4,
+    "pattern": 3,
+    "pink": 3,
+    "grey": 2,
+    "yellow/orange": 1
+   }
+  },
+  "theme": [
+   "country-western"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 96,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_BardotTops",
+  "source_file": "Clothing/Clothing_BardotTops.txt",
+  "display_name": "Bardot Tops",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Tops",
+  "group_rank": 6,
+  "facets": {
+   "colour": {
+    "other": 29,
+    "blue": 1,
+    "pattern": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 31,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_BeachGirl",
+  "source_file": "Clothing/Clothing_BeachGirl.txt",
+  "display_name": "Beach Girl",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "other": 74,
+    "white": 10,
+    "blue": 8,
+    "pattern": 5,
+    "neutral": 2,
+    "black": 1,
+    "metallic": 1,
+    "red": 1
+   }
+  },
+  "theme": [
+   "beach-summer"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 102,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_bedroom",
+  "source_file": "Clothing/Clothing_bedroom.txt",
+  "display_name": "Bedroom Wear",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Lingerie and sleepwear",
+  "group_rank": 9,
+  "facets": {
+   "colour": {
+    "black": 11,
+    "white": 10,
+    "red": 7,
+    "purple": 5,
+    "pink": 4,
+    "neutral": 4,
+    "green": 4,
+    "blue": 3,
+    "metallic": 2,
+    "yellow/orange": 1
+   }
+  },
+  "theme": [
+   "bedroom-intimate"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 51,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_BodyconMidiDress",
+  "source_file": "Clothing/Clothing_BodyconMidiDress.txt",
+  "display_name": "Bodycon Midi Dress",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "black": 6,
+    "red": 5,
+    "blue": 4,
+    "green": 3,
+    "white": 3,
+    "brown": 2,
+    "purple": 2,
+    "neutral": 2,
+    "pink": 1,
+    "other": 1,
+    "grey": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 30,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Bodysuit",
+  "source_file": "Clothing/Clothing_Bodysuit.txt",
+  "display_name": "Bodysuit",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "One-pieces",
+  "group_rank": 7,
+  "facets": {
+   "colour": {
+    "black": 3,
+    "white": 3,
+    "red": 2,
+    "neutral": 1,
+    "green": 1,
+    "metallic": 1,
+    "brown": 1,
+    "blue": 1,
+    "pink": 1,
+    "pattern": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 15,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_BowTops",
+  "source_file": "Clothing/Clothing_BowTops.txt",
+  "display_name": "Bow Tops",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Tops",
+  "group_rank": 6,
+  "facets": {
+   "colour": {
+    "black": 31,
+    "white": 30,
+    "neutral": 14,
+    "blue": 12,
+    "red": 9,
+    "pink": 8,
+    "pattern": 6,
+    "metallic": 3,
+    "green": 2,
+    "yellow/orange": 2,
+    "purple": 1,
+    "grey": 1,
+    "brown": 1
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 120,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_BustierOutfits",
+  "source_file": "Clothing/Clothing_BustierOutfits.txt",
+  "display_name": "Bustier Outfits",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Tops",
+  "group_rank": 6,
+  "facets": {
+   "colour": {
+    "black": 27,
+    "white": 14,
+    "red": 13,
+    "blue": 8,
+    "neutral": 6,
+    "pattern": 6,
+    "green": 5,
+    "metallic": 5,
+    "pink": 3,
+    "purple": 2,
+    "yellow/orange": 2,
+    "brown": 2
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 93,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Corsets",
+  "source_file": "Clothing/Clothing_Corsets.txt",
+  "display_name": "Corsets",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Tops",
+  "group_rank": 6,
+  "facets": {
+   "colour": {
+    "black": 36,
+    "white": 14,
+    "red": 13,
+    "blue": 8,
+    "pattern": 6,
+    "metallic": 5,
+    "other": 5,
+    "neutral": 5,
+    "green": 2,
+    "pink": 1,
+    "brown": 1,
+    "grey": 1,
+    "purple": 1
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 98,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Cosplay",
+  "source_file": "Clothing/Clothing_Cosplay.txt",
+  "display_name": "Cosplay",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "black": 20,
+    "red": 10,
+    "green": 5,
+    "white": 5,
+    "brown": 3,
+    "other": 3,
+    "metallic": 2,
+    "pink": 1,
+    "blue": 1,
+    "purple": 1
+   }
+  },
+  "theme": [
+   "cosplay-fantasy"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 51,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_CowlandHalterNeck",
+  "source_file": "Clothing/Clothing_CowlandHalterNeck.txt",
+  "display_name": "Cowl and Halter Neck",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Tops",
+  "group_rank": 6,
+  "facets": {
+   "colour": {
+    "black": 25,
+    "neutral": 19,
+    "red": 15,
+    "blue": 13,
+    "white": 12,
+    "green": 10,
+    "metallic": 9,
+    "pink": 6,
+    "pattern": 4,
+    "purple": 3,
+    "grey": 3,
+    "brown": 2
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 121,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Cutoutdress",
+  "source_file": "Clothing/Clothing_Cutoutdress.txt",
+  "display_name": "Cutoutdress",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "black": 8,
+    "red": 5,
+    "blue": 4,
+    "green": 3,
+    "white": 2,
+    "brown": 2,
+    "purple": 2,
+    "neutral": 2,
+    "other": 1,
+    "pink": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 30,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_DoubleSlitMaxiSkirtOutfits",
+  "source_file": "Clothing/Clothing_DoubleSlitMaxiSkirtOutfits.txt",
+  "display_name": "Double Slit Maxi Skirt Outfits",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Skirt outfits",
+  "group_rank": 8,
+  "facets": {
+   "colour": {
+    "black": 20,
+    "red": 10,
+    "neutral": 10,
+    "green": 9,
+    "white": 8,
+    "blue": 8,
+    "metallic": 7,
+    "pattern": 5,
+    "pink": 4,
+    "yellow/orange": 4,
+    "grey": 3,
+    "purple": 2,
+    "brown": 2
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 92,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_FootballShirtsFormFittting",
+  "source_file": "Clothing/Clothing_FootballShirtsFormFittting.txt",
+  "display_name": "Football Shirts (Form Fitting)",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Sportswear and fan",
+  "group_rank": 11,
+  "facets": {
+   "colour": {
+    "red": 12,
+    "blue": 12,
+    "white": 8,
+    "yellow/orange": 2,
+    "black": 1
+   }
+  },
+  "theme": [
+   "fan-merch"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 35,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Formula1Shirts",
+  "source_file": "Clothing/Clothing_Formula1Shirts.txt",
+  "display_name": "Formula1 Shirts",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Sportswear and fan",
+  "group_rank": 11,
+  "facets": {
+   "colour": {
+    "black": 25,
+    "blue": 18,
+    "red": 14,
+    "yellow/orange": 7,
+    "green": 7
+   }
+  },
+  "theme": [
+   "fan-merch"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 71,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_GamerGirl",
+  "source_file": "Clothing/Clothing_GamerGirl.txt",
+  "display_name": "Gamer Girl",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "other": 49,
+    "black": 17,
+    "blue": 8,
+    "pink": 3,
+    "white": 3,
+    "pattern": 3,
+    "green": 2,
+    "metallic": 2,
+    "purple": 2,
+    "grey": 1,
+    "red": 1
+   }
+  },
+  "theme": [
+   "gamer"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 91,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_GothGirl",
+  "source_file": "Clothing/Clothing_GothGirl.txt",
+  "display_name": "Goth Girl",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "black": 46
+   }
+  },
+  "theme": [
+   "alt-goth"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 46,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_GymFit",
+  "source_file": "Clothing/Clothing_GymFit.txt",
+  "display_name": "Gym Fit",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Sportswear and fan",
+  "group_rank": 11,
+  "facets": {
+   "colour": {
+    "other": 55,
+    "black": 36,
+    "grey": 7,
+    "white": 6,
+    "blue": 4,
+    "green": 3,
+    "pink": 2,
+    "red": 1,
+    "purple": 1,
+    "neutral": 1,
+    "brown": 1
+   }
+  },
+  "theme": [
+   "gym-fitness"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 117,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_InstagramInfluencer",
+  "source_file": "Clothing/Clothing_InstagramInfluencer.txt",
+  "display_name": "Instagram Influencer",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "other": 52,
+    "metallic": 25,
+    "blue": 8,
+    "white": 4,
+    "black": 3,
+    "pattern": 1,
+    "pink": 1,
+    "red": 1,
+    "brown": 1
+   }
+  },
+  "theme": [
+   "instagram-influencer"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 96,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Jumpsuits",
+  "source_file": "Clothing/Clothing_Jumpsuits.txt",
+  "display_name": "Jumpsuits",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "One-pieces",
+  "group_rank": 7,
+  "facets": {
+   "colour": {
+    "black": 3,
+    "white": 3,
+    "red": 2,
+    "blue": 2,
+    "green": 1,
+    "neutral": 1,
+    "brown": 1,
+    "metallic": 1,
+    "pattern": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 15,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_KnitMiniDress",
+  "source_file": "Clothing/Clothing_KnitMiniDress.txt",
+  "display_name": "Knit Mini Dress",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "black": 5,
+    "neutral": 3,
+    "brown": 3,
+    "red": 3,
+    "white": 3,
+    "green": 3,
+    "blue": 3,
+    "other": 2,
+    "purple": 2,
+    "grey": 1,
+    "pink": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 29,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_LaceTrimmedCamisole",
+  "source_file": "Clothing/Clothing_LaceTrimmedCamisole.txt",
+  "display_name": "Lace Trimmed Camisole",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Tops",
+  "group_rank": 6,
+  "facets": {
+   "colour": {
+    "purple": 3,
+    "black": 2,
+    "white": 2,
+    "red": 2,
+    "neutral": 2,
+    "pink": 2,
+    "green": 2,
+    "blue": 2,
+    "grey": 1,
+    "brown": 1,
+    "yellow/orange": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 20,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_LeatherMiniDress",
+  "source_file": "Clothing/Clothing_LeatherMiniDress.txt",
+  "display_name": "Leather Mini Dress",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "black": 13,
+    "red": 10,
+    "brown": 5,
+    "other": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 29,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_lingerie",
+  "source_file": "Clothing/Clothing_lingerie.txt",
+  "display_name": "Lingerie",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Lingerie and sleepwear",
+  "group_rank": 9,
+  "facets": {
+   "colour": {
+    "black": 9,
+    "blue": 8,
+    "red": 7,
+    "purple": 6,
+    "green": 5,
+    "pink": 5,
+    "white": 3,
+    "neutral": 3,
+    "yellow/orange": 2,
+    "grey": 1,
+    "metallic": 1,
+    "brown": 1,
+    "other": 1
+   }
+  },
+  "theme": [
+   "bedroom-intimate"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 52,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_MiniDress",
+  "source_file": "Clothing/Clothing_MiniDress.txt",
+  "display_name": "Mini Dress",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "black": 31,
+    "blue": 18,
+    "white": 15,
+    "green": 15,
+    "red": 14,
+    "neutral": 13,
+    "pattern": 8,
+    "metallic": 8,
+    "pink": 7,
+    "yellow/orange": 7,
+    "purple": 5,
+    "brown": 5,
+    "grey": 5,
+    "other": 1
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 152,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_MiniSkirtOutfits",
+  "source_file": "Clothing/Clothing_MiniSkirtOutfits.txt",
+  "display_name": "Mini Skirt Outfits",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Skirt outfits",
+  "group_rank": 8,
+  "facets": {
+   "colour": {
+    "black": 13,
+    "white": 5,
+    "red": 5,
+    "blue": 5,
+    "metallic": 4,
+    "pink": 3,
+    "purple": 2,
+    "green": 1,
+    "yellow/orange": 1,
+    "neutral": 1
+   }
+  },
+  "theme": [],
+  "format": "suffix",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_OffShoulderKnitDresses",
+  "source_file": "Clothing/Clothing_OffShoulderKnitDresses.txt",
+  "display_name": "Off Shoulder Knit Dresses",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "other": 20
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 20,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Playsuits",
+  "source_file": "Clothing/Clothing_Playsuits.txt",
+  "display_name": "Playsuits",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "One-pieces",
+  "group_rank": 7,
+  "facets": {
+   "colour": {
+    "black": 3,
+    "white": 2,
+    "red": 2,
+    "blue": 2,
+    "green": 1,
+    "neutral": 1,
+    "brown": 1,
+    "metallic": 1,
+    "pink": 1,
+    "pattern": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 15,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_PoloShirtsandMiniSkirts",
+  "source_file": "Clothing/Clothing_PoloShirtsandMiniSkirts.txt",
+  "display_name": "Polo Shirts and Mini Skirts",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Skirt outfits",
+  "group_rank": 8,
+  "facets": {
+   "colour": {
+    "other": 35,
+    "blue": 6,
+    "pattern": 5,
+    "white": 3,
+    "black": 3,
+    "red": 3,
+    "neutral": 3,
+    "pink": 2,
+    "green": 2,
+    "grey": 2,
+    "yellow/orange": 1,
+    "purple": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 66,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_RibbedBodyconDress",
+  "source_file": "Clothing/Clothing_RibbedBodyconDress.txt",
+  "display_name": "Ribbed Bodycon Dress",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "black": 5,
+    "neutral": 3,
+    "red": 3,
+    "green": 3,
+    "white": 3,
+    "blue": 3,
+    "brown": 2,
+    "grey": 2,
+    "purple": 2,
+    "other": 2,
+    "pink": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 29,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_robesandcoverups",
+  "source_file": "Clothing/Clothing_robesandcoverups.txt",
+  "display_name": "Robes and Cover-ups",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Lingerie and sleepwear",
+  "group_rank": 9,
+  "facets": {
+   "colour": {
+    "black": 7,
+    "white": 6,
+    "neutral": 5,
+    "blue": 4,
+    "green": 4,
+    "red": 3,
+    "pink": 3,
+    "purple": 3,
+    "metallic": 2,
+    "brown": 1,
+    "yellow/orange": 1,
+    "other": 1
+   }
+  },
+  "theme": [
+   "bedroom-intimate"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_RockandMetalBandOversizedTeesandHoodies",
+  "source_file": "Clothing/Clothing_RockandMetalBandOversizedTeesandHoodies.txt",
+  "display_name": "Rock and Metal Band Oversized Tees and Hoodies",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "black": 60,
+    "grey": 23,
+    "green": 2
+   }
+  },
+  "theme": [
+   "alt-goth"
+  ],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 85,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Rompers",
+  "source_file": "Clothing/Clothing_Rompers.txt",
+  "display_name": "Rompers",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "One-pieces",
+  "group_rank": 7,
+  "facets": {
+   "colour": {
+    "black": 3,
+    "white": 3,
+    "red": 2,
+    "blue": 2,
+    "neutral": 1,
+    "green": 1,
+    "brown": 1,
+    "pink": 1,
+    "pattern": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 15,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_SatinCamisole",
+  "source_file": "Clothing/Clothing_SatinCamisole.txt",
+  "display_name": "Satin Camisole",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Tops",
+  "group_rank": 6,
+  "facets": {
+   "colour": {
+    "red": 181,
+    "white": 170,
+    "black": 160,
+    "metallic": 131,
+    "green": 126,
+    "neutral": 97,
+    "purple": 49,
+    "pink": 43,
+    "blue": 30,
+    "yellow/orange": 2
+   },
+   "bottom": {
+    "skirts": 534,
+    "trousers": 443,
+    "shorts": 8,
+    "jeans": 4
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": true,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 989,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_SatinRobeEnsemble",
+  "source_file": "Clothing/Clothing_SatinRobeEnsemble.txt",
+  "display_name": "Satin Robe Ensemble",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Lingerie and sleepwear",
+  "group_rank": 9,
+  "facets": {
+   "colour": {
+    "purple": 3,
+    "neutral": 2,
+    "black": 2,
+    "red": 2,
+    "white": 2,
+    "pink": 2,
+    "green": 2,
+    "blue": 1,
+    "metallic": 1,
+    "grey": 1,
+    "other": 1,
+    "yellow/orange": 1
+   }
+  },
+  "theme": [
+   "bedroom-intimate"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 20,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_SchoolUniformCosplay",
+  "source_file": "Clothing/Clothing_SchoolUniformCosplay.txt",
+  "display_name": "School Uniform Cosplay",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "white": 69,
+    "blue": 16,
+    "neutral": 16,
+    "black": 12,
+    "red": 8,
+    "pink": 3,
+    "grey": 2,
+    "yellow/orange": 1,
+    "purple": 1
+   }
+  },
+  "theme": [
+   "school-uniform"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 128,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_SeeThroughSheer",
+  "source_file": "Clothing/Clothing_SeeThroughSheer.txt",
+  "display_name": "See Through Sheer",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Lingerie and sleepwear",
+  "group_rank": 9,
+  "facets": {
+   "colour": {
+    "black": 57,
+    "white": 32,
+    "neutral": 14,
+    "red": 8,
+    "pattern": 7,
+    "pink": 6,
+    "blue": 6,
+    "green": 2,
+    "metallic": 1,
+    "other": 1
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 134,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_SilkSlipDress",
+  "source_file": "Clothing/Clothing_SilkSlipDress.txt",
+  "display_name": "Silk Slip Dress",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "red": 3,
+    "white": 2,
+    "black": 2,
+    "green": 2,
+    "pink": 2,
+    "metallic": 2,
+    "brown": 2,
+    "purple": 2,
+    "neutral": 1,
+    "blue": 1,
+    "yellow/orange": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 20,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_SkaterGirl",
+  "source_file": "Clothing/Clothing_SkaterGirl.txt",
+  "display_name": "Skater Girl",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "other": 21,
+    "pattern": 7,
+    "blue": 7,
+    "black": 5,
+    "grey": 1,
+    "metallic": 1
+   }
+  },
+  "theme": [
+   "skater"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 42,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_stockingsandhoisery",
+  "source_file": "Clothing/Clothing_stockingsandhoisery.txt",
+  "display_name": "Stockings and Hosiery",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Lingerie and sleepwear",
+  "group_rank": 9,
+  "facets": {
+   "colour": {
+    "black": 11,
+    "white": 6,
+    "red": 5,
+    "neutral": 4,
+    "blue": 3,
+    "green": 3,
+    "grey": 2,
+    "pink": 2,
+    "purple": 2,
+    "brown": 1,
+    "metallic": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Streetwear",
+  "source_file": "Clothing/Clothing_Streetwear.txt",
+  "display_name": "Streetwear",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "black": 18,
+    "grey": 9,
+    "blue": 9,
+    "white": 7,
+    "green": 4,
+    "red": 2,
+    "neutral": 2
+   }
+  },
+  "theme": [
+   "urban-street"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 51,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_SummerDresses",
+  "source_file": "Clothing/Clothing_SummerDresses.txt",
+  "display_name": "Summer Dresses",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "white": 19,
+    "blue": 14,
+    "red": 12,
+    "yellow/orange": 12,
+    "green": 11,
+    "pink": 9,
+    "black": 8,
+    "neutral": 7,
+    "purple": 4,
+    "pattern": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 97,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_Swimwear",
+  "source_file": "Clothing/Clothing_Swimwear.txt",
+  "display_name": "Swimwear",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Swimwear",
+  "group_rank": 10,
+  "facets": {
+   "colour": {
+    "other": 25,
+    "blue": 20,
+    "black": 17,
+    "red": 16,
+    "yellow/orange": 11,
+    "white": 9,
+    "green": 9,
+    "pattern": 7,
+    "pink": 6,
+    "purple": 4,
+    "metallic": 3,
+    "neutral": 2,
+    "brown": 1
+   }
+  },
+  "theme": [
+   "beach-summer"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 130,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_UrbanStreet",
+  "source_file": "Clothing/Clothing_UrbanStreet.txt",
+  "display_name": "Urban Street",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "basic",
+  "group": "Themed looks",
+  "group_rank": 12,
+  "facets": {
+   "colour": {
+    "black": 62,
+    "grey": 20,
+    "other": 13,
+    "blue": 13,
+    "neutral": 9,
+    "green": 7,
+    "metallic": 6,
+    "brown": 5,
+    "pattern": 4,
+    "white": 4,
+    "red": 2
+   }
+  },
+  "theme": [
+   "urban-street"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 145,
+  "notes": ""
+ },
+ {
+  "id": "Clothing_WeddingDresses",
+  "source_file": "Clothing/Clothing_WeddingDresses.txt",
+  "display_name": "Wedding Dresses",
+  "section": "clothing",
+  "slot": "outfit",
+  "tier": "detailed",
+  "group": "Dresses",
+  "group_rank": 5,
+  "facets": {
+   "colour": {
+    "white": 55,
+    "pattern": 18,
+    "other": 15,
+    "neutral": 6,
+    "pink": 5
+   }
+  },
+  "theme": [
+   "wedding-bridal"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 99,
+  "notes": ""
+ },
+ {
+  "id": "Colours_backgroundhome",
+  "source_file": "Colour Background/Colours_backgroundhome.txt",
+  "display_name": "Home Background Colours",
+  "section": "environment",
+  "slot": "colour palette",
+  "tier": "basic",
+  "group": "General and colours",
+  "group_rank": 22,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 43,
+  "notes": ""
+ },
+ {
+  "id": "Filters_ColourGrading",
+  "source_file": "Colour Filters/Filters_ColourGrading.txt",
+  "display_name": "Colour Grading",
+  "section": "style",
+  "slot": "colour grading",
+  "tier": "detailed",
+  "group": "Colour grading",
+  "group_rank": 30,
+  "facets": {
+   "tone": {
+    "warm": 68,
+    "pastel and soft": 11,
+    "cool": 11,
+    "bold and high contrast": 8,
+    "black and white": 6,
+    "vintage and film": 6,
+    "natural and neutral": 2,
+    "other": 2,
+    "teal and orange": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 115,
+  "notes": ""
+ },
+ {
+  "id": "Enviroment",
+  "source_file": "Enviroments/Enviroment.txt",
+  "display_name": "General Environments",
+  "section": "environment",
+  "slot": "general setting",
+  "tier": "basic",
+  "group": "General and colours",
+  "group_rank": 22,
+  "facets": {
+   "place": {
+    "military and industrial": 20,
+    "city and transport": 20,
+    "home and hotel interiors": 19,
+    "forest, mountain and desert": 10,
+    "sci-fi": 6,
+    "studios": 5,
+    "offices and labs": 5,
+    "historic and gothic": 5,
+    "coast and water": 5,
+    "countryside": 3,
+    "other": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 99,
+  "notes": ""
+ },
+ {
+  "id": "Environment_InstagramInfluencer",
+  "source_file": "Enviroments/Environment_InstagramInfluencer.txt",
+  "display_name": "Instagram Influencer",
+  "section": "environment",
+  "slot": "setting",
+  "tier": "detailed",
+  "group": "City and nightlife",
+  "group_rank": 23,
+  "facets": {
+   "place": {
+    "other": 39,
+    "rooftop and balcony": 28,
+    "interiors": 27,
+    "pool and beach": 23,
+    "city": 20,
+    "studio and sport": 15,
+    "outdoors": 13,
+    "cafes and bars": 12
+   }
+  },
+  "theme": [
+   "instagram-influencer"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 177,
+  "notes": ""
+ },
+ {
+  "id": "Environment_NightlifePhotography",
+  "source_file": "Enviroments/Environment_NightlifePhotography.txt",
+  "display_name": "Nightlife Photography",
+  "section": "environment",
+  "slot": "setting",
+  "tier": "detailed",
+  "group": "City and nightlife",
+  "group_rank": 23,
+  "facets": {
+   "venue": {
+    "bar and lounge": 164,
+    "nightclub": 162,
+    "rooftop": 115,
+    "other": 28,
+    "street and alley": 23,
+    "events": 4,
+    "restaurant and cafe": 1,
+    "hotel": 1
+   },
+   "vibe": {
+    "luxury": 235,
+    "neon": 84,
+    "other": 81,
+    "intimate and dim": 46,
+    "industrial and underground": 31,
+    "lively": 21
+   }
+  },
+  "theme": [
+   "nightlife"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 498,
+  "notes": ""
+ },
+ {
+  "id": "Environment_RainPhotography",
+  "source_file": "Enviroments/Environment_RainPhotography.txt",
+  "display_name": "Rain Photography",
+  "section": "environment",
+  "slot": "setting",
+  "tier": "scene",
+  "group": "Weather",
+  "group_rank": 24,
+  "facets": {},
+  "theme": [
+   "rain"
+  ],
+  "format": "plain",
+  "covers": [
+   "action"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 50,
+  "notes": ""
+ },
+ {
+  "id": "Environment_Urban",
+  "source_file": "Enviroments/Environment_Urban.txt",
+  "display_name": "Urban",
+  "section": "environment",
+  "slot": "setting",
+  "tier": "scene",
+  "group": "City and nightlife",
+  "group_rank": 23,
+  "facets": {},
+  "theme": [
+   "urban-street"
+  ],
+  "format": "emdash",
+  "covers": [
+   "action",
+   "camera"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 77,
+  "notes": ""
+ },
+ {
+  "id": "Environment_VehicleScenicLandscapes",
+  "source_file": "Enviroments/Environment_VehicleScenicLandscapes.txt",
+  "display_name": "Vehicle Scenic Landscapes",
+  "section": "environment",
+  "slot": "setting",
+  "tier": "detailed",
+  "group": "Vehicles and landscapes",
+  "group_rank": 25,
+  "facets": {
+   "terrain": {
+    "open road": 48,
+    "mountains": 37,
+    "desert": 14,
+    "lakes and valleys": 14,
+    "forest": 9,
+    "coast": 8,
+    "city and bridges": 2,
+    "snow and ice": 1
+   }
+  },
+  "theme": [
+   "vehicles"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 133,
+  "notes": ""
+ },
+ {
+  "id": "Expression_basic",
+  "source_file": "Expressions/Expression_basic.txt",
+  "display_name": "Basic Expressions",
+  "section": "subject",
+  "slot": "basic expression",
+  "tier": "basic",
+  "group": "Face",
+  "group_rank": 2,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 16,
+  "notes": ""
+ },
+ {
+  "id": "Expression_facialexpressionsandeyes",
+  "source_file": "Expressions/Expression_facialexpressionsandeyes.txt",
+  "display_name": "Facial Expressions and Eyes",
+  "section": "subject",
+  "slot": "expression and eyes",
+  "tier": "detailed",
+  "group": "Face",
+  "group_rank": 2,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 50,
+  "notes": ""
+ },
+ {
+  "id": "Female_body",
+  "source_file": "Female Body/Female_body.txt",
+  "display_name": "Body Types",
+  "section": "subject",
+  "slot": "body",
+  "tier": "basic",
+  "group": "Body and age",
+  "group_rank": 0,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 16,
+  "notes": ""
+ },
+ {
+  "id": "Female_HairStyles",
+  "source_file": "Female Hair Styles/Female_HairStyles.txt",
+  "display_name": "Hair Styles",
+  "section": "subject",
+  "slot": "hair style",
+  "tier": "detailed",
+  "group": "Hair",
+  "group_rank": 1,
+  "facets": {
+   "type": {
+    "buns and updos": 29,
+    "braids": 28,
+    "waves": 23,
+    "layers and cuts": 19,
+    "curls": 18,
+    "movement and placement": 18,
+    "short cuts": 15,
+    "ponytails": 14,
+    "parts": 12,
+    "blowouts": 10,
+    "wet and messy": 10,
+    "clips and accessories": 9,
+    "vintage and editorial": 9,
+    "straight and sleek": 8,
+    "bangs": 6,
+    "half-up": 4,
+    "other": 2
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 234,
+  "notes": ""
+ },
+ {
+  "id": "lighting_Basic",
+  "source_file": "Lighting/lighting_Basic.txt",
+  "display_name": "Basic Lighting",
+  "section": "lighting",
+  "slot": "basic lighting",
+  "tier": "basic",
+  "group": "Everyday lighting",
+  "group_rank": 28,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 78,
+  "notes": ""
+ },
+ {
+  "id": "Lighting_DynamicShadowPhotography",
+  "source_file": "Lighting/Lighting_DynamicShadowPhotography.txt",
+  "display_name": "Lighting Dynamic Shadow Photography",
+  "section": "lighting",
+  "slot": "dramatic lighting",
+  "tier": "scene",
+  "group": "Dramatic lighting",
+  "group_rank": 29,
+  "facets": {
+   "colour": {
+    "black": 28,
+    "other": 25,
+    "red": 12,
+    "white": 10,
+    "blue": 8,
+    "metallic": 3,
+    "green": 2,
+    "pink": 2,
+    "grey": 1,
+    "purple": 1
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [
+   "action",
+   "camera"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 92,
+  "notes": ""
+ },
+ {
+  "id": "HorrorMoviePosters",
+  "source_file": "Movie Theme/HorrorMoviePosters.txt",
+  "display_name": "Horror Movie Posters",
+  "section": "style",
+  "slot": "movie theme",
+  "tier": "scene",
+  "group": "Movie themes",
+  "group_rank": 32,
+  "facets": {},
+  "theme": [
+   "horror-movie"
+  ],
+  "format": "plain",
+  "covers": [
+   "action",
+   "environment",
+   "camera",
+   "lighting"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 37,
+  "notes": ""
+ },
+ {
+  "id": "Pose_backovershoulder",
+  "source_file": "Pose/Pose_backovershoulder.txt",
+  "display_name": "Back Over Shoulder",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Standing and movement",
+  "group_rank": 16,
+  "facets": {
+   "posture": {
+    "standing": 18,
+    "sitting": 8,
+    "walking and moving": 7,
+    "leaning": 4,
+    "lying and reclining": 2
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 39,
+  "notes": ""
+ },
+ {
+  "id": "Pose_balcony",
+  "source_file": "Pose/Pose_balcony.txt",
+  "display_name": "Balcony",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Rooms and places",
+  "group_rank": 15,
+  "facets": {
+   "posture": {
+    "standing": 16,
+    "sitting": 13,
+    "leaning": 7,
+    "lying and reclining": 3
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 39,
+  "notes": ""
+ },
+ {
+  "id": "Pose_bathroomandvanityscenes",
+  "source_file": "Pose/Pose_bathroomandvanityscenes.txt",
+  "display_name": "Bathroom and Vanity Scenes",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Rooms and places",
+  "group_rank": 15,
+  "facets": {
+   "posture": {
+    "sitting": 17,
+    "standing": 16,
+    "leaning": 7
+   }
+  },
+  "theme": [
+   "bathroom"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Pose_BeachGirlEnvironmentandLighting",
+  "source_file": "Pose/Pose_BeachGirlEnvironmentandLighting.txt",
+  "display_name": "Beach Girl (with environment and lighting)",
+  "section": "action",
+  "slot": "pose",
+  "tier": "scene",
+  "group": "Themed poses",
+  "group_rank": 19,
+  "facets": {
+   "posture": {
+    "standing": 29,
+    "sitting": 22,
+    "leaning": 10,
+    "walking and moving": 6,
+    "lying and reclining": 4,
+    "bending and stretching": 3,
+    "kneeling": 2
+   }
+  },
+  "theme": [
+   "beach-summer"
+  ],
+  "format": "emdash",
+  "covers": [
+   "environment",
+   "lighting"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 76,
+  "notes": ""
+ },
+ {
+  "id": "Pose_Bed",
+  "source_file": "Pose/Pose_Bed.txt",
+  "display_name": "Bed",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Bed and bedroom",
+  "group_rank": 13,
+  "facets": {
+   "posture": {
+    "lying and reclining": 21,
+    "sitting": 18,
+    "kneeling": 7,
+    "other": 4,
+    "leaning": 1
+   }
+  },
+  "theme": [
+   "bedroom-intimate"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 51,
+  "notes": ""
+ },
+ {
+  "id": "Pose_BedroomGlamour",
+  "source_file": "Pose/Pose_BedroomGlamour.txt",
+  "display_name": "Bedroom Glamour",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Bed and bedroom",
+  "group_rank": 13,
+  "facets": {
+   "posture": {
+    "other": 51,
+    "standing": 50,
+    "sitting": 30,
+    "lying and reclining": 6,
+    "leaning": 6,
+    "kneeling": 2,
+    "walking and moving": 1
+   }
+  },
+  "theme": [
+   "bedroom-intimate"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 146,
+  "notes": ""
+ },
+ {
+  "id": "Pose_bentforward",
+  "source_file": "Pose/Pose_bentforward.txt",
+  "display_name": "Bent Forward",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Standing and movement",
+  "group_rank": 16,
+  "facets": {
+   "posture": {
+    "leaning": 20,
+    "bending and stretching": 20
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Pose_candidmoments",
+  "source_file": "Pose/Pose_candidmoments.txt",
+  "display_name": "Candid Moments",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Photo styles",
+  "group_rank": 17,
+  "facets": {
+   "posture": {
+    "sitting": 14,
+    "standing": 9,
+    "other": 9,
+    "walking and moving": 5,
+    "bending and stretching": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 38,
+  "notes": ""
+ },
+ {
+  "id": "Pose_casualAmatuerphotography",
+  "source_file": "Pose/Pose_casualAmatuerphotography.txt",
+  "display_name": "Casual Amateur Photography",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Photo styles",
+  "group_rank": 17,
+  "facets": {
+   "posture": {
+    "other": 14,
+    "sitting": 13,
+    "standing": 5,
+    "walking and moving": 3,
+    "leaning": 2,
+    "lying and reclining": 2
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 39,
+  "notes": ""
+ },
+ {
+  "id": "Pose_Chair",
+  "source_file": "Pose/Pose_Chair.txt",
+  "display_name": "Chair",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Furniture and floor",
+  "group_rank": 14,
+  "facets": {
+   "posture": {
+    "sitting": 35,
+    "other": 5,
+    "leaning": 5,
+    "lying and reclining": 4,
+    "kneeling": 2
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 51,
+  "notes": ""
+ },
+ {
+  "id": "Pose_ClothingInterationDONOTADDCLOTHES",
+  "source_file": "Pose/Pose_ClothingInterationDONOTADDCLOTHES.txt",
+  "display_name": "Clothing Interaction (pose names the garment)",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Clothing interaction",
+  "group_rank": 18,
+  "facets": {
+   "garment": {
+    "jackets and coats": 28,
+    "tops and shirts": 28,
+    "accessories": 25,
+    "other": 20,
+    "dresses": 16,
+    "skirts": 12,
+    "trousers and shorts": 9
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [
+   "clothing"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 138,
+  "notes": ""
+ },
+ {
+  "id": "Pose_EditorialFashion",
+  "source_file": "Pose/Pose_EditorialFashion.txt",
+  "display_name": "Editorial Fashion",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Photo styles",
+  "group_rank": 17,
+  "facets": {
+   "posture": {
+    "other": 46,
+    "standing": 37,
+    "sitting": 7,
+    "walking and moving": 5,
+    "leaning": 4,
+    "kneeling": 1
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 100,
+  "notes": ""
+ },
+ {
+  "id": "Pose_FemalewithBike",
+  "source_file": "Pose/Pose_FemalewithBike.txt",
+  "display_name": "Female with Bike",
+  "section": "action",
+  "slot": "pose",
+  "tier": "scene",
+  "group": "Vehicles",
+  "group_rank": 20,
+  "facets": {
+   "posture": {
+    "standing": 36,
+    "sitting": 25,
+    "leaning": 18
+   }
+  },
+  "theme": [
+   "vehicles"
+  ],
+  "format": "emdash",
+  "covers": [
+   "environment",
+   "lighting"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 79,
+  "notes": ""
+ },
+ {
+  "id": "Pose_femalewithCar",
+  "source_file": "Pose/Pose_femalewithCar.txt",
+  "display_name": "Female with Car",
+  "section": "action",
+  "slot": "pose",
+  "tier": "scene",
+  "group": "Vehicles",
+  "group_rank": 20,
+  "facets": {
+   "posture": {
+    "sitting": 31,
+    "standing": 20,
+    "leaning": 20,
+    "lying and reclining": 2,
+    "kneeling": 1,
+    "bending and stretching": 1
+   }
+  },
+  "theme": [
+   "vehicles"
+  ],
+  "format": "emdash",
+  "covers": [
+   "environment",
+   "lighting"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 75,
+  "notes": ""
+ },
+ {
+  "id": "Pose_floor",
+  "source_file": "Pose/Pose_floor.txt",
+  "display_name": "Floor",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Furniture and floor",
+  "group_rank": 14,
+  "facets": {
+   "posture": {
+    "sitting": 19,
+    "kneeling": 11,
+    "lying and reclining": 10
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Pose_GamerGirlEnvironment",
+  "source_file": "Pose/Pose_GamerGirlEnvironment.txt",
+  "display_name": "Gamer Girl (with environment)",
+  "section": "action",
+  "slot": "pose",
+  "tier": "scene",
+  "group": "Themed poses",
+  "group_rank": 19,
+  "facets": {
+   "posture": {
+    "sitting": 33,
+    "standing": 20,
+    "leaning": 7,
+    "lying and reclining": 3,
+    "kneeling": 1
+   }
+  },
+  "theme": [
+   "gamer"
+  ],
+  "format": "emdash",
+  "covers": [
+   "environment",
+   "lighting"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 64,
+  "notes": ""
+ },
+ {
+  "id": "Pose_Glamour",
+  "source_file": "Pose/Pose_Glamour.txt",
+  "display_name": "Glamour",
+  "section": "action",
+  "slot": "pose",
+  "tier": "scene",
+  "group": "Photo styles",
+  "group_rank": 17,
+  "facets": {
+   "posture": {
+    "sitting": 25,
+    "standing": 19,
+    "lying and reclining": 12,
+    "leaning": 8,
+    "kneeling": 3,
+    "bending and stretching": 1
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [
+   "environment",
+   "lighting"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 68,
+  "notes": ""
+ },
+ {
+  "id": "Pose_GymFit",
+  "source_file": "Pose/Pose_GymFit.txt",
+  "display_name": "Gym Fit",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Themed poses",
+  "group_rank": 19,
+  "facets": {
+   "posture": {
+    "standing": 39,
+    "other": 31,
+    "bending and stretching": 12,
+    "leaning": 1
+   }
+  },
+  "theme": [
+   "gym-fitness"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 83,
+  "notes": ""
+ },
+ {
+  "id": "Pose_hotel",
+  "source_file": "Pose/Pose_hotel.txt",
+  "display_name": "Hotel",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Rooms and places",
+  "group_rank": 15,
+  "facets": {
+   "posture": {
+    "sitting": 15,
+    "standing": 13,
+    "lying and reclining": 6,
+    "leaning": 5,
+    "other": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Pose_InstagramInfluencer",
+  "source_file": "Pose/Pose_InstagramInfluencer.txt",
+  "display_name": "Instagram Influencer",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Themed poses",
+  "group_rank": 19,
+  "facets": {
+   "posture": {
+    "standing": 52,
+    "other": 34,
+    "sitting": 23,
+    "leaning": 14,
+    "walking and moving": 12,
+    "kneeling": 5,
+    "bending and stretching": 4,
+    "lying and reclining": 4
+   }
+  },
+  "theme": [
+   "instagram-influencer"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 148,
+  "notes": ""
+ },
+ {
+  "id": "Pose_kneeling",
+  "source_file": "Pose/Pose_kneeling.txt",
+  "display_name": "Kneeling",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Standing and movement",
+  "group_rank": 16,
+  "facets": {
+   "posture": {
+    "kneeling": 39
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 39,
+  "notes": ""
+ },
+ {
+  "id": "Pose_Morningbedroomscenes",
+  "source_file": "Pose/Pose_Morningbedroomscenes.txt",
+  "display_name": "Morning Bedroom Scenes",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Bed and bedroom",
+  "group_rank": 13,
+  "facets": {
+   "posture": {
+    "sitting": 18,
+    "standing": 14,
+    "lying and reclining": 3,
+    "leaning": 2,
+    "walking and moving": 2,
+    "kneeling": 1
+   }
+  },
+  "theme": [
+   "bedroom-intimate"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Pose_PinUpVintage",
+  "source_file": "Pose/Pose_PinUpVintage.txt",
+  "display_name": "Pin Up Vintage",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Photo styles",
+  "group_rank": 17,
+  "facets": {
+   "posture": {
+    "standing": 45,
+    "sitting": 35,
+    "other": 21,
+    "leaning": 11,
+    "bending and stretching": 3,
+    "kneeling": 2,
+    "walking and moving": 1
+   }
+  },
+  "theme": [
+   "pin-up-vintage"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 118,
+  "notes": ""
+ },
+ {
+  "id": "Pose_playfulSoloFighting",
+  "source_file": "Pose/Pose_playfulSoloFighting.txt",
+  "display_name": "Playful Solo Fighting",
+  "section": "action",
+  "slot": "pose",
+  "tier": "scene",
+  "group": "Themed poses",
+  "group_rank": 19,
+  "facets": {
+   "posture": {
+    "other": 39,
+    "standing": 15,
+    "leaning": 6,
+    "bending and stretching": 3
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [
+   "camera"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 63,
+  "notes": ""
+ },
+ {
+  "id": "Pose_poolside",
+  "source_file": "Pose/Pose_poolside.txt",
+  "display_name": "Poolside",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Rooms and places",
+  "group_rank": 15,
+  "facets": {
+   "posture": {
+    "sitting": 14,
+    "standing": 10,
+    "lying and reclining": 8,
+    "walking and moving": 4,
+    "other": 2,
+    "bending and stretching": 1
+   }
+  },
+  "theme": [
+   "beach-summer"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 39,
+  "notes": ""
+ },
+ {
+  "id": "Pose_SeductiveBodyLanguage",
+  "source_file": "Pose/Pose_SeductiveBodyLanguage.txt",
+  "display_name": "Seductive Body Language",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Standing and movement",
+  "group_rank": 16,
+  "facets": {
+   "posture": {
+    "standing": 62,
+    "leaning": 18,
+    "other": 18,
+    "sitting": 15,
+    "walking and moving": 4,
+    "kneeling": 4,
+    "bending and stretching": 3
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 124,
+  "notes": ""
+ },
+ {
+  "id": "Pose_ShowerandBath",
+  "source_file": "Pose/Pose_ShowerandBath.txt",
+  "display_name": "Shower and Bath",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Rooms and places",
+  "group_rank": 15,
+  "facets": {
+   "posture": {
+    "other": 92,
+    "standing": 39,
+    "sitting": 17,
+    "lying and reclining": 11,
+    "leaning": 7,
+    "walking and moving": 3,
+    "kneeling": 2,
+    "bending and stretching": 1
+   }
+  },
+  "theme": [
+   "bathroom"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 172,
+  "notes": ""
+ },
+ {
+  "id": "Pose_SkaterGirl",
+  "source_file": "Pose/Pose_SkaterGirl.txt",
+  "display_name": "Skater Girl",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Themed poses",
+  "group_rank": 19,
+  "facets": {
+   "posture": {
+    "standing": 34,
+    "bending and stretching": 18,
+    "walking and moving": 11,
+    "leaning": 10,
+    "other": 8,
+    "sitting": 8,
+    "kneeling": 5,
+    "lying and reclining": 5
+   }
+  },
+  "theme": [
+   "skater"
+  ],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 99,
+  "notes": ""
+ },
+ {
+  "id": "Pose_Sofa",
+  "source_file": "Pose/Pose_Sofa.txt",
+  "display_name": "Sofa",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Furniture and floor",
+  "group_rank": 14,
+  "facets": {
+   "posture": {
+    "sitting": 87,
+    "lying and reclining": 9,
+    "other": 7,
+    "leaning": 3
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 106,
+  "notes": ""
+ },
+ {
+  "id": "Pose_Staircase",
+  "source_file": "Pose/Pose_Staircase.txt",
+  "display_name": "Staircase",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Furniture and floor",
+  "group_rank": 14,
+  "facets": {
+   "posture": {
+    "standing": 64,
+    "sitting": 16,
+    "other": 15,
+    "leaning": 6,
+    "walking and moving": 5,
+    "bending and stretching": 3,
+    "kneeling": 3,
+    "lying and reclining": 2
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 114,
+  "notes": ""
+ },
+ {
+  "id": "Pose_StandingandBentover",
+  "source_file": "Pose/Pose_StandingandBentover.txt",
+  "display_name": "Standing and Bentover",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Standing and movement",
+  "group_rank": 16,
+  "facets": {
+   "posture": {
+    "bending and stretching": 18,
+    "leaning": 16,
+    "standing": 15,
+    "walking and moving": 1,
+    "kneeling": 1
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 51,
+  "notes": ""
+ },
+ {
+  "id": "Pose_standingandwall",
+  "source_file": "Pose/Pose_standingandwall.txt",
+  "display_name": "Standing and Wall",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Rooms and places",
+  "group_rank": 15,
+  "facets": {
+   "posture": {
+    "leaning": 21,
+    "standing": 12,
+    "other": 4,
+    "bending and stretching": 3
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 40,
+  "notes": ""
+ },
+ {
+  "id": "Pose_stretchingposes",
+  "source_file": "Pose/Pose_stretchingposes.txt",
+  "display_name": "Stretching Poses",
+  "section": "action",
+  "slot": "pose",
+  "tier": "basic",
+  "group": "Standing and movement",
+  "group_rank": 16,
+  "facets": {
+   "posture": {
+    "sitting": 12,
+    "bending and stretching": 10,
+    "standing": 7,
+    "kneeling": 5,
+    "lying and reclining": 2,
+    "leaning": 1,
+    "other": 1
+   }
+  },
+  "theme": [
+   "gym-fitness"
+  ],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 38,
+  "notes": ""
+ },
+ {
+  "id": "Pose_TableCounter",
+  "source_file": "Pose/Pose_TableCounter.txt",
+  "display_name": "Table Counter",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Furniture and floor",
+  "group_rank": 14,
+  "facets": {
+   "posture": {
+    "standing": 48,
+    "sitting": 35,
+    "leaning": 27,
+    "other": 8,
+    "walking and moving": 4,
+    "bending and stretching": 1,
+    "kneeling": 1
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 124,
+  "notes": ""
+ },
+ {
+  "id": "Pose_VehicleCenterfoldPoses",
+  "source_file": "Pose/Pose_VehicleCenterfoldPoses.txt",
+  "display_name": "Vehicle Centerfold Poses",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Vehicles",
+  "group_rank": 20,
+  "facets": {
+   "posture": {
+    "sitting": 30,
+    "lying and reclining": 11,
+    "leaning": 9,
+    "standing": 9,
+    "other": 5,
+    "kneeling": 4,
+    "bending and stretching": 3
+   }
+  },
+  "theme": [
+   "vehicles"
+  ],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 71,
+  "notes": ""
+ },
+ {
+  "id": "Pose_Yoga",
+  "source_file": "Pose/Pose_Yoga.txt",
+  "display_name": "Yoga",
+  "section": "action",
+  "slot": "pose",
+  "tier": "detailed",
+  "group": "Themed poses",
+  "group_rank": 19,
+  "facets": {
+   "posture": {
+    "other": 30,
+    "lying and reclining": 16,
+    "sitting": 15,
+    "bending and stretching": 14,
+    "standing": 10,
+    "kneeling": 8,
+    "leaning": 4
+   }
+  },
+  "theme": [
+   "gym-fitness"
+  ],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 97,
+  "notes": ""
+ },
+ {
+  "id": "SkinDetail",
+  "source_file": "Skin Detail/SkinDetail.txt",
+  "display_name": "Skin Detail",
+  "section": "subject",
+  "slot": "skin",
+  "tier": "detailed",
+  "group": "Skin",
+  "group_rank": 3,
+  "facets": {
+   "area": {
+    "face": 63,
+    "in different light": 14,
+    "arms and hands": 5,
+    "other": 4,
+    "neck and shoulders": 3,
+    "legs and feet": 2
+   }
+  },
+  "theme": [],
+  "format": "comma",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 91,
+  "notes": ""
+ },
+ {
+  "id": "Style_ArtisticBodyShots",
+  "source_file": "Style/Style_ArtisticBodyShots.txt",
+  "display_name": "Artistic Body Shots",
+  "section": "style",
+  "slot": "photo style",
+  "tier": "scene",
+  "group": "Artistic shots",
+  "group_rank": 31,
+  "facets": {
+   "colour": {
+    "red": 20,
+    "blue": 17,
+    "pink": 12,
+    "purple": 11,
+    "yellow/orange": 6,
+    "green": 6,
+    "metallic": 5,
+    "other": 4,
+    "black": 2,
+    "pattern": 1
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [
+   "action",
+   "camera",
+   "lighting"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 84,
+  "notes": ""
+ },
+ {
+  "id": "Style_ArtisticCloseupHeadshots",
+  "source_file": "Style/Style_ArtisticCloseupHeadshots.txt",
+  "display_name": "Artistic Closeup Headshots",
+  "section": "style",
+  "slot": "photo style",
+  "tier": "scene",
+  "group": "Artistic shots",
+  "group_rank": 31,
+  "facets": {
+   "colour": {
+    "blue": 19,
+    "red": 18,
+    "other": 15,
+    "pink": 12,
+    "purple": 7,
+    "green": 6,
+    "metallic": 4,
+    "yellow/orange": 3,
+    "black": 3,
+    "pattern": 1
+   }
+  },
+  "theme": [],
+  "format": "emdash",
+  "covers": [
+   "camera",
+   "lighting"
+  ],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 88,
+  "notes": ""
+ },
+ {
+  "id": "XXX_Prompts",
+  "source_file": "XXX/XXX_Prompts.txt",
+  "display_name": "XXX Prompts",
+  "section": "action",
+  "slot": "adult scenes",
+  "tier": "scene",
+  "group": "Adult",
+  "group_rank": 21,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [
+   "environment",
+   "lighting",
+   "clothing"
+  ],
+  "content_level": "explicit",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 12,
+  "notes": ""
+ },
+ {
+  "id": "Age",
+  "source_file": "Drafted/Age/Age.txt",
+  "display_name": "Age",
+  "section": "subject",
+  "slot": "age",
+  "tier": "basic",
+  "group": "Body and age",
+  "group_rank": 0,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 8,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "BustShape",
+  "source_file": "Drafted/Bust/BustShape.txt",
+  "display_name": "Bust Shape",
+  "section": "subject",
+  "slot": "bust shape",
+  "tier": "basic",
+  "group": "Body and age",
+  "group_rank": 0,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 14,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "BustSize",
+  "source_file": "Drafted/Bust/BustSize.txt",
+  "display_name": "Bust Size",
+  "section": "subject",
+  "slot": "bust size",
+  "tier": "basic",
+  "group": "Body and age",
+  "group_rank": 0,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 18,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "EyeColour",
+  "source_file": "Drafted/Eye Colour/EyeColour.txt",
+  "display_name": "Eye Colours",
+  "section": "subject",
+  "slot": "eye colour",
+  "tier": "basic",
+  "group": "Face",
+  "group_rank": 2,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 14,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "HairColour_Fashion",
+  "source_file": "Drafted/Hair Colour/HairColour_Fashion.txt",
+  "display_name": "Fashion Hair Colours",
+  "section": "subject",
+  "slot": "hair colour",
+  "tier": "detailed",
+  "group": "Hair",
+  "group_rank": 1,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 14,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "HairColour_Natural",
+  "source_file": "Drafted/Hair Colour/HairColour_Natural.txt",
+  "display_name": "Natural Hair Colours",
+  "section": "subject",
+  "slot": "hair colour",
+  "tier": "basic",
+  "group": "Hair",
+  "group_rank": 1,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 18,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "Makeup_Basic",
+  "source_file": "Drafted/Makeup/Makeup_Basic.txt",
+  "display_name": "Everyday Makeup",
+  "section": "subject",
+  "slot": "makeup",
+  "tier": "basic",
+  "group": "Face",
+  "group_rank": 2,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 12,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "Makeup_Styled",
+  "source_file": "Drafted/Makeup/Makeup_Styled.txt",
+  "display_name": "Styled Makeup",
+  "section": "subject",
+  "slot": "makeup",
+  "tier": "detailed",
+  "group": "Face",
+  "group_rank": 2,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 14,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "SkinTone_Basic",
+  "source_file": "Drafted/Skin Tone/SkinTone_Basic.txt",
+  "display_name": "Skin Tones",
+  "section": "subject",
+  "slot": "skin tone",
+  "tier": "basic",
+  "group": "Skin",
+  "group_rank": 3,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 10,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "SkinTone_Detailed",
+  "source_file": "Drafted/Skin Tone/SkinTone_Detailed.txt",
+  "display_name": "Skin Tones (undertones and details)",
+  "section": "subject",
+  "slot": "skin tone",
+  "tier": "detailed",
+  "group": "Skin",
+  "group_rank": 3,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 9,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "Piercings",
+  "source_file": "Drafted/Tattoos and Piercings/Piercings.txt",
+  "display_name": "Piercings",
+  "section": "subject",
+  "slot": "piercings",
+  "tier": "basic",
+  "group": "Body art",
+  "group_rank": 4,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 9,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "Tattoos_Bold",
+  "source_file": "Drafted/Tattoos and Piercings/Tattoos_Bold.txt",
+  "display_name": "Bold Tattoos",
+  "section": "subject",
+  "slot": "tattoos",
+  "tier": "detailed",
+  "group": "Body art",
+  "group_rank": 4,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 13,
+  "notes": "Drafted by Claude - please review"
+ },
+ {
+  "id": "Tattoos_Subtle",
+  "source_file": "Drafted/Tattoos and Piercings/Tattoos_Subtle.txt",
+  "display_name": "Subtle Tattoos",
+  "section": "subject",
+  "slot": "tattoos",
+  "tier": "basic",
+  "group": "Body art",
+  "group_rank": 4,
+  "facets": {},
+  "theme": [],
+  "format": "plain",
+  "covers": [],
+  "content_level": "general",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 12,
+  "notes": "Drafted by Claude - please review"
+ }
+]
