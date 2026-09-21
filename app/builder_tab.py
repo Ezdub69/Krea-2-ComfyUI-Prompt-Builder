@@ -517,19 +517,22 @@ class BuilderTab(QWidget):
     def prompt_text(self):
         return composer.compose(self.current_picks())
 
-    def _update_none_warnings(self):
-        """With eye colour set to None, flag any row (picked by hand) whose text still names an eye colour."""
-        if not self.rows["subject:eye colour"].none:
-            for row in self.rows.values():
-                if row.entry is not None and row._warning.startswith("Names an eye colour"):
-                    row.set_warning("")
-            return
-        for row in self.rows.values():
-            named = row.entry is not None and composer.mentions_eye_colour(row.entry["text"])
-            row.set_warning("Names an eye colour although Eye colour is None" if named else "")
+    def _update_warnings(self):
+        """Flag rows picked by hand that clash with something else: text that names an eye colour while Eye colour is
+        None, and a pose (or other detail) that names clothing while the Clothing row has its own pick."""
+        eye_none = self.rows["subject:eye colour"].none
+        clothing_picked = self.rows["clothing"].entry is not None
+        for key, row in self.rows.items():
+            warnings = []
+            if row.entry is not None:
+                if eye_none and composer.mentions_eye_colour(row.entry["text"]):
+                    warnings.append("Names an eye colour although Eye colour is None")
+                if clothing_picked and key != "clothing" and composer.entry_mentions_clothing(row.entry):
+                    warnings.append("Names clothing, which may clash with the Clothing row")
+            row.set_warning("; ".join(warnings))
 
     def refresh_preview(self):
-        self._update_none_warnings()
+        self._update_warnings()
         text = self.prompt_text()
         self.preview.setPlainText(text)
         self.status.setText(f"{len(text.split())} words" if text else "")

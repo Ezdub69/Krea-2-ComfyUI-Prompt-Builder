@@ -63,7 +63,10 @@ show a small grey note under the row, such as <i>Also describes: Environment</i>
   <li>An <i>environment</i> that suits the pose. Bed poses get bedrooms and hotel rooms, pool poses get pools, yoga gets
       studios and gyms, and so on.</li>
   <li><i>Clothing</i> that suits both. Swimwear by the pool, robes and lingerie in bedrooms and bathrooms, gym wear at the
-      gym. Lingerie, robes, swimwear, gym wear, school uniforms and gamer looks are only used in a matching setting.</li>
+      gym. Lingerie, robes, swimwear, gym wear, school uniforms and gamer looks are only used in a matching setting.
+      A pose that describes its own clothing (about 1 pose in 30) is never used next to a Clothing pick, so a pose and an
+      outfit cannot clash. If you lock such a pose, the Wildcard leaves the Clothing row empty; if you put the two together
+      by hand, the pose's row shows a warning.</li>
   <li>Camera, lighting and style, then the details of the woman.</li>
 </ol>
 <p>The wildcard first picks a <i>list</i> and then an entry inside it, so a very long list cannot crowd out a short one.</p>

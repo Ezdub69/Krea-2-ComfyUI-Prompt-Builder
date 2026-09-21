@@ -1,4 +1,5 @@
 """Turns chosen presets into the labelled-paragraph prompt structure. Pure text rules - no model involved."""
+import json
 import re
 
 TITLES = {"subject": "Subject", "clothing": "Clothing", "action": "Action", "environment": "Environment",
@@ -20,6 +21,28 @@ _EYE_COLOUR_WORDS = (r"(?:brown|blue|green|hazel|amber|gr[ae]y|violet|purple|gol
 _EYE_COLOUR_RX = re.compile(
     r"\b" + _EYE_COLOUR_WORDS + r"(?:[- ][a-z]+){0,2}[- ]eyes?\b|\beye[- ]?colou?r|\b" + _EYE_COLOUR_WORDS + r"-eyed\b", re.I)
 _WOMAN = re.compile(r"^(?:an? |the )?(?:(?:adult|young|beautiful|elegant|confident|stylish) )*woman\b\s*", re.I)
+
+
+_WEARING_RX = re.compile(r"\b(?:wearing|wears|dressed in)\b", re.I)
+
+
+def entry_mentions_clothing(entry):
+    """True when a preset names garments of its own ('wearing a satin robe', 'slipping into a robe').
+
+    Uses the clothing words found when the presets were imported, plus any 'wearing ...' phrasing. entry can be an entry
+    dict or a database row: it needs 'text' and, optionally, 'mentions'."""
+    try:
+        raw = entry["mentions"]
+    except (KeyError, IndexError):
+        raw = None
+    if raw:
+        try:
+            found = json.loads(raw) if isinstance(raw, str) else raw
+        except ValueError:
+            found = {}
+        if isinstance(found, dict) and found.get("clothing"):
+            return True
+    return bool(_WEARING_RX.search(entry["text"]))
 
 
 def guess_form(text):

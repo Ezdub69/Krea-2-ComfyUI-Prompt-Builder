@@ -81,9 +81,24 @@ The preset data that ships with the app is in `build/out/` and is never changed 
 
 ## Updating
 
-Extract the new version, then copy your old `data` folder into it. On its first start the new version notices that the
-shipped presets have changed and refreshes the library; your own lists, entries, saved prompts, on/off choices and settings
-are kept. (To force a refresh at any time: `.venv\Scripts\python.exe main.py --rebuild-library`.)
+There is no automatic updater: you swap in the new files yourself. Your own data lives in `data/` and the installed PySide6
+in `.venv/`, and a release zip contains neither, so updating never touches them. To see which version you have, open
+**Help → About**.
+
+**Simplest: extract over the top.**
+
+1. Close the app. (Optional: copy `data\library.db` somewhere as a backup.)
+2. Extract the new zip. It holds one top-level folder, `ComfyUI-Prompt-Builder-V2-<version>`; copy the *contents* of that
+   folder into your existing app folder, so you do not end up with a folder inside a folder.
+3. Choose **Replace the files in the destination** when Windows asks.
+4. Start the app with `run_promptbuilder.bat` as usual. The existing `.venv` is reused, so nothing is downloaded again.
+
+**Or start fresh:** extract the new version into a new folder and copy your old `data` folder into it. This downloads
+PySide6 again, because the new folder has no `.venv`.
+
+Either way, your own lists, entries, saved prompts, on/off choices and settings are kept. If the new version ships changed
+presets, it notices at its first start and refreshes the library, keeping all of that. (To force a refresh at any time:
+`.venv\Scripts\python.exe main.py --rebuild-library`.)
 
 ## Rebuilding the library from your own text files (advanced)
 

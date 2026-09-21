@@ -339,6 +339,12 @@ def enabled_entry_texts(conn, collection_id):
         "SELECT id, text FROM entries WHERE collection_id = ? AND enabled = 1 ORDER BY source_line, id", (collection_id,))]
 
 
+def enabled_entry_rows(conn, collection_id):
+    """id, text and mentions of the enabled entries of one list."""
+    return conn.execute("SELECT id, text, mentions FROM entries WHERE collection_id = ? AND enabled = 1 ORDER BY source_line, id",
+                        (collection_id,)).fetchall()
+
+
 def enabled_entry_ids(conn, collection_id):
     return [r["id"] for r in conn.execute(
         "SELECT id FROM entries WHERE collection_id = ? AND enabled = 1 ORDER BY source_line, id", (collection_id,))]

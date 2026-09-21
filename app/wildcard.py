@@ -3,7 +3,7 @@ import json
 import random
 
 from app import db, placematch
-from app.composer import HAIR_COLOUR_WORDS, mentions_eye_colour
+from app.composer import HAIR_COLOUR_WORDS, entry_mentions_clothing, mentions_eye_colour
 
 # (row key, label, slots in the library, chance the wildcard fills it)
 SUBJECT_ROWS = [
@@ -36,13 +36,19 @@ def row_key(entry):
 
 
 _avoid_eye_colour = [False]   # set while drawing when the user has chosen "None" for eye colour
+_avoid_clothing = [False]     # set while drawing when a separate Clothing pick is (or will be) part of the prompt
 
 
-def _entry_id(conn, rng, collection_id):
-    """A random enabled entry of one list; with eye colour switched off, never one that names an eye colour."""
-    if not _avoid_eye_colour[0]:
+def _entry_id(conn, rng, collection_id, avoid_clothing=False):
+    """A random enabled entry of one list.
+
+    With eye colour switched off, never one that names an eye colour. With avoid_clothing (a Clothing pick is in play),
+    never one that names garments of its own - such a pose would put a second outfit into the prompt."""
+    if not _avoid_eye_colour[0] and not avoid_clothing:
         return rng.choice(db.enabled_entry_ids(conn, collection_id))
-    fine = [i for i, text in db.enabled_entry_texts(conn, collection_id) if not mentions_eye_colour(text)]
+    fine = [row["id"] for row in db.enabled_entry_rows(conn, collection_id)
+            if not (_avoid_eye_colour[0] and mentions_eye_colour(row["text"]))
+            and not (avoid_clothing and entry_mentions_clothing(row))]
     return rng.choice(fine) if fine else None
 
 
@@ -51,7 +57,8 @@ def _pick_from(conn, rng, lists, weights=None):
     weights = list(weights or [c["weight"] for c in lists])
     while lists:
         index = rng.choices(range(len(lists)), weights=weights)[0]
-        entry_id = _entry_id(conn, rng, lists[index]["id"])
+        avoid_clothing = _avoid_clothing[0] and lists[index]["section"] != "clothing"   # clothing lists are the clothing
+        entry_id = _entry_id(conn, rng, lists[index]["id"], avoid_clothing)
         if entry_id is not None:
             return db.get_entry(conn, entry_id)
         del lists[index], weights[index]
@@ -117,6 +124,8 @@ def sections_described_by(entry):
     Adult scenes are whole photographs: they never get a separate clothing line (the scene is nude or dressed as it says)
     and skip any section their text mentions. Ordinary entries only skip what their list says it covers."""
     skip = set(entry["covers"])
+    if entry["section"] != "clothing" and entry_mentions_clothing(entry):
+        skip.add("clothing")   # a pose, scene or poster that names what she is wearing: no second outfit next to it
     if entry["slot"] == ADULT_SLOT:
         mentions = json.loads(entry["mentions"]) if entry.get("mentions") else {}
         skip |= {"clothing"} | (set(mentions) & {"environment", "camera", "lighting"})
@@ -143,6 +152,7 @@ def wildcard_picks(conn, rng=None, tiers=("basic", "detailed"), show_adult=False
                                adult_chance, set(skip_rows))
     finally:
         _avoid_eye_colour[0] = False
+        _avoid_clothing[0] = False
 
 
 def _wildcard_picks(conn, rng, tiers, show_adult, scenes, scene_chance, locked, detail, adult_chance, skip_rows):
@@ -157,7 +167,7 @@ def _wildcard_picks(conn, rng, tiers, show_adult, scenes, scene_chance, locked, 
         scene = _draw(conn, rng, tiers=["scene"], show_adult=False)
         if scene and scene["section"] != "subject" and scene["section"] not in picks:
             picks[scene["section"]] = [scene]
-            skip |= set(scene["covers"]) | {scene["section"]}
+            skip |= sections_described_by(scene) | {scene["section"]}
     if show_adult and "action" not in picks and rng.random() < adult_chance:
         entry = _draw_adult_action(conn, rng)
         if entry:
@@ -166,6 +176,7 @@ def _wildcard_picks(conn, rng, tiers, show_adult, scenes, scene_chance, locked, 
     for section in PICK_ORDER:
         if section in picks or section in skip or (scenes and rng.random() > SECTION_CHANCE[section]):
             continue
+        _avoid_clothing[0] = "clothing" in picks or "clothing" not in skip   # a Clothing pick exists or is still to come
         entry = None
         for use_tiers in (tiers, None):   # if the chosen tiers leave a section empty, widen to every tier
             action = picks.get("action", [None])[0]
@@ -181,6 +192,7 @@ def _wildcard_picks(conn, rng, tiers, show_adult, scenes, scene_chance, locked, 
         if entry:
             picks[section] = [entry]
             skip |= sections_described_by(entry)
+    _avoid_clothing[0] = "clothing" in picks or "clothing" not in skip
     subject = list(picks.get("subject", []))
     have = {row_key(e).split(":", 1)[1] for e in subject}
     for key, _label, _slots, chance in SUBJECT_ROWS:
@@ -199,10 +211,12 @@ def _wildcard_picks(conn, rng, tiers, show_adult, scenes, scene_chance, locked, 
 def reroll(conn, rng, row, picks, tiers=("basic", "detailed"), show_adult=False, adult_chance=0.3, skip_rows=()):
     """A fresh entry for one builder row ('action', 'clothing'..., or 'subject:<row>') given the rest of the picks."""
     _avoid_eye_colour[0] = "subject:eye colour" in skip_rows
+    _avoid_clothing[0] = bool(picks.get("clothing")) and row != "clothing"   # a Clothing pick is in place: avoid a second outfit
     try:
         return _reroll(conn, rng, row, picks, tiers, show_adult, adult_chance)
     finally:
         _avoid_eye_colour[0] = False
+        _avoid_clothing[0] = False
 
 
 def _reroll(conn, rng, row, picks, tiers, show_adult, adult_chance):
