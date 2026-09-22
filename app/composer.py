@@ -24,6 +24,15 @@ _WOMAN = re.compile(r"^(?:an? |the )?(?:(?:adult|young|beautiful|elegant|confide
 
 
 _WEARING_RX = re.compile(r"\b(?:wearing|wears|dressed in)\b", re.I)
+_BODY_SHAPE_RX = re.compile(
+    r"\b(?:"
+    r"(?:small|smaller|petite|delicate|modest|medium|proportionate|full|fuller|rounded|curvy|large|larger|soft|"
+    r"voluptuous|heavy|generous|ample|perky|pert|pendulous|flat)[- ](?:breasts?|bust|chest|bosom|cleavage)"
+    r"|breasts?[- ](?:small|smaller|petite|delicate|modest|medium|proportionate|full|fuller|rounded|curvy|large|"
+    r"larger|soft|voluptuous|heavy|generous|ample|perky|pert|pendulous)"
+    r"|hourglass (?:figure|proportions|curves|body|shape)"
+    r"|(?:athletic|slender|toned|lean|muscular|statuesque|petite|voluptuous|curvy)[- ](?:physique|figure|build|frame)"
+    r")\b", re.I)
 
 
 def entry_mentions_clothing(entry):
@@ -45,6 +54,17 @@ def entry_mentions_clothing(entry):
     return bool(_WEARING_RX.search(entry["text"]))
 
 
+def entry_mentions_body_shape(entry):
+    """True when a preset names a bust size/shape or body build of its own ('ample breasts', 'athletic physique'),
+    which would clash with a separately drawn Subject body/bust size/bust shape pick. entry can be an entry dict or a
+    database row, or a plain string."""
+    try:
+        text = entry["text"]
+    except (KeyError, IndexError, TypeError):
+        text = entry
+    return bool(_BODY_SHAPE_RX.search(text or ""))
+
+
 def guess_form(text):
     """How an entry is worded (same idea as the importer): 'woman_clause', 'she_clause', 'participial' or 'phrase'."""
     if _WOMAN.match(text):
@@ -59,6 +79,22 @@ def guess_form(text):
 def mentions_eye_colour(text):
     """True when a text names the colour of the eyes ('blue eyes', 'amber-eyed', 'eye colour')."""
     return bool(_EYE_COLOUR_RX.search(text))
+
+
+_TATTOO_RX = re.compile(r"\btattoo(?:s|ed)?\b", re.I)
+_PIERCING_RX = re.compile(
+    r"\bpiercings?\b|\bpierced\b|\b(?:nose|septum|eyebrow|lip|navel|belly[- ]button|nipple|ear|helix|lobe|tragus|"
+    r"cartilage)[- ](?:stud|ring|hoop|piercing)s?\b", re.I)
+
+
+def mentions_tattoos(text):
+    """True when a text names a tattoo."""
+    return bool(_TATTOO_RX.search(text))
+
+
+def mentions_piercings(text):
+    """True when a text names a piercing (a nose stud, hoop earrings, a septum ring...)."""
+    return bool(_PIERCING_RX.search(text))
 
 
 def article(text):

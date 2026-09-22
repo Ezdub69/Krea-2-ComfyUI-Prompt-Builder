@@ -67,7 +67,10 @@ show a small grey note under the row, such as <i>Also describes: Environment</i>
       A pose that describes its own clothing (about 1 pose in 30) is never used next to a Clothing pick, so a pose and an
       outfit cannot clash. If you lock such a pose, the Wildcard leaves the Clothing row empty; if you put the two together
       by hand, the pose's row shows a warning.</li>
-  <li>Camera, lighting and style, then the details of the woman.</li>
+  <li>Camera, lighting and style, then the details of the woman. A pose or adult scene that describes its own bust size,
+      shape or build is never paired with a separately drawn Bust size, Bust shape or Body pick, so the two cannot
+      disagree. If you lock one of those rows, such a pose leaves it out of the picture instead; if you put the two
+      together by hand, the pose's row shows a warning.</li>
 </ol>
 <p>The wildcard first picks a <i>list</i> and then an entry inside it, so a very long list cannot crowd out a short one.</p>
 <h3>The options next to the button</h3>
@@ -86,18 +89,18 @@ show a small grey note under the row, such as <i>Also describes: Environment</i>
       skips any other part the scene already mentions.</td></tr>
 </table>
 """),
-        ("Character LoRAs and eye colour", STYLE + """
-<h2>Character LoRAs and eye colour</h2>
-<p>A character LoRA usually has the eye colour trained in, so a different colour in the prompt only fights it.</p>
-<p>On the <i>Eye colour</i> row press <b>Choose...</b>. The first item in the list is
-<b>None &mdash; leave eye colour out of the prompt</b>. Once you pick it:</p>
+        ("Character LoRAs: eye colour, tattoos, piercings", STYLE + """
+<h2>Character LoRAs: eye colour, tattoos, piercings</h2>
+<p>A character LoRA usually has these trained in, so the prompt naming a different one only fights it.</p>
+<p>On the <i>Eye colour</i>, <i>Tattoos</i> or <i>Piercings</i> row press <b>Choose...</b>. The first item in each list is
+a "None" option worded for that row, for example <b>None &mdash; leave eye colour out of the prompt</b>. Once you pick it:</p>
 <ul>
-  <li>the row reads <i>None &mdash; left out of the prompt</i> and no eye colour appears in the prompt;</li>
-  <li>the wildcard never draws an eye colour, and never draws any entry (from any section) that names one;</li>
-  <li>an entry you pick by hand that names an eye colour gets a small warning under its row;</li>
+  <li>the row reads <i>None &mdash; left out of the prompt</i> and nothing of that kind appears in the prompt;</li>
+  <li>the wildcard never draws one, and never draws any entry (from any section) that names one;</li>
+  <li>an entry you pick by hand that names one gets a small warning under its row;</li>
   <li>your choice is remembered next time.</li>
 </ul>
-<p>To switch it off, choose a real eye colour from the list or press <b>Clear</b> on that row.</p>
+<p>To switch a row back on, choose a real entry from its list or press <b>Clear</b> on that row.</p>
 """),
         ("Saved prompts", STYLE + """
 <h2>Saved prompts</h2>
@@ -213,10 +216,19 @@ app and replace <code>library.db</code> with a file from the backups folder, kee
 <h3>A paragraph is missing from the prompt</h3>
 <p>You cleared that row, or <b>Whole-scene presets</b> is ticked (a scene can cover other parts), or the pose was an adult
 scene (which covers the rest). Untick those and press <b>Wildcard</b>.</p>
-<h3>There is no eye colour</h3>
-<p>The Eye colour row is set to <i>None</i>. Choose a real colour, or press <b>Clear</b> on that row.</p>
+<h3>There is no eye colour, tattoo or piercing</h3>
+<p>That row is set to <i>None</i>. Choose a real entry from it, or press <b>Clear</b> on that row.</p>
 <h3>There is no Clothing paragraph</h3>
 <p>The row is empty, or an adult scene was picked (adult scenes describe the clothing themselves).</p>
+<h3>Two parts of the prompt seem to disagree (a clash)</h3>
+<p>The Wildcard is built to avoid the clashes we know about: a pose that names its own clothing next to a separate
+Clothing pick, a pose that names its own bust size/shape or build next to a locked Subject Body/Bust pick, and anything
+that names an eye colour, tattoo or piercing while that row is set to <i>None</i>. When you put two clashing things
+together yourself with <b>Choose...</b>, the row that clashes shows a small warning under it, so you can see it and pick
+something else, lock the other row first, or set it to <i>None</i> if it has that option.</p>
+<p>If the Wildcard itself ever produces two parts that plainly disagree - not one you chose by hand - that is a gap we
+have not caught yet. It is worth reporting: include the full prompt text (<b>Copy prompt</b>), and which row you think is
+responsible. The more specific the wording it named, the easier it is to fix.</p>
 <h3>I cannot find a prompt I saved</h3>
 <p>If it contains an adult scene it is hidden until <b>Adult content</b> is ticked in the Builder. The Saved tab says how
 many are hidden.</p>

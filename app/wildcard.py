@@ -3,7 +3,8 @@ import json
 import random
 
 from app import db, placematch
-from app.composer import HAIR_COLOUR_WORDS, entry_mentions_clothing, mentions_eye_colour
+from app.composer import (HAIR_COLOUR_WORDS, entry_mentions_body_shape, entry_mentions_clothing, mentions_eye_colour,
+                          mentions_piercings, mentions_tattoos)
 
 # (row key, label, slots in the library, chance the wildcard fills it)
 SUBJECT_ROWS = [
@@ -35,20 +36,28 @@ def row_key(entry):
     return entry["section"]
 
 
-_avoid_eye_colour = [False]   # set while drawing when the user has chosen "None" for eye colour
-_avoid_clothing = [False]     # set while drawing when a separate Clothing pick is (or will be) part of the prompt
+_avoid_eye_colour = [False]     # set while drawing when the user has chosen "None" for eye colour
+_avoid_tattoos = [False]        # set while drawing when the user has chosen "None" for tattoos
+_avoid_piercings = [False]      # set while drawing when the user has chosen "None" for piercings
+_avoid_clothing = [False]       # set while drawing when a separate Clothing pick is (or will be) part of the prompt
+_avoid_body_shape = [False]     # set while drawing when a Subject body/bust pick is locked in place
 
 
-def _entry_id(conn, rng, collection_id, avoid_clothing=False):
+def _entry_id(conn, rng, collection_id, avoid_clothing=False, avoid_body_shape=False):
     """A random enabled entry of one list.
 
-    With eye colour switched off, never one that names an eye colour. With avoid_clothing (a Clothing pick is in play),
-    never one that names garments of its own - such a pose would put a second outfit into the prompt."""
-    if not _avoid_eye_colour[0] and not avoid_clothing:
+    With eye colour/tattoos/piercings switched off, never one that names an eye colour/tattoo/piercing. With
+    avoid_clothing (a Clothing pick is in play), never one that names garments of its own - such a pose would put a
+    second outfit into the prompt. With avoid_body_shape (a Subject body/bust pick is locked), never one that names
+    its own bust size/shape or build."""
+    if not (_avoid_eye_colour[0] or _avoid_tattoos[0] or _avoid_piercings[0] or avoid_clothing or avoid_body_shape):
         return rng.choice(db.enabled_entry_ids(conn, collection_id))
     fine = [row["id"] for row in db.enabled_entry_rows(conn, collection_id)
             if not (_avoid_eye_colour[0] and mentions_eye_colour(row["text"]))
-            and not (avoid_clothing and entry_mentions_clothing(row))]
+            and not (_avoid_tattoos[0] and mentions_tattoos(row["text"]))
+            and not (_avoid_piercings[0] and mentions_piercings(row["text"]))
+            and not (avoid_clothing and entry_mentions_clothing(row))
+            and not (avoid_body_shape and entry_mentions_body_shape(row))]
     return rng.choice(fine) if fine else None
 
 
@@ -58,7 +67,8 @@ def _pick_from(conn, rng, lists, weights=None):
     while lists:
         index = rng.choices(range(len(lists)), weights=weights)[0]
         avoid_clothing = _avoid_clothing[0] and lists[index]["section"] != "clothing"   # clothing lists are the clothing
-        entry_id = _entry_id(conn, rng, lists[index]["id"], avoid_clothing)
+        avoid_body_shape = _avoid_body_shape[0] and lists[index]["section"] != "subject"   # subject lists are the body/bust
+        entry_id = _entry_id(conn, rng, lists[index]["id"], avoid_clothing, avoid_body_shape)
         if entry_id is not None:
             return db.get_entry(conn, entry_id)
         del lists[index], weights[index]
@@ -81,7 +91,8 @@ def _draw_environment(conn, rng, allowed, tiers, show_adult, standalone):
         chosen = rng.choices(lists, weights=[c["weight"] * (0.25 if c["slot"] == "colour palette" else 1) for c in lists])[0]
         palette = chosen["slot"] == "colour palette"
         fits = [i for i, t in db.enabled_entry_texts(conn, chosen["id"])
-                if placematch.environment_fits(t, palette, allowed) and not (_avoid_eye_colour[0] and mentions_eye_colour(t))]
+                if placematch.environment_fits(t, palette, allowed) and not (_avoid_eye_colour[0] and mentions_eye_colour(t))
+                and not (_avoid_tattoos[0] and mentions_tattoos(t)) and not (_avoid_piercings[0] and mentions_piercings(t))]
         if fits:
             return db.get_entry(conn, rng.choice(fits))
         lists.remove(chosen)
@@ -147,18 +158,25 @@ def wildcard_picks(conn, rng=None, tiers=("basic", "detailed"), show_adult=False
     with that row skipped, no entry that names an eye colour is drawn either.
     """
     _avoid_eye_colour[0] = "subject:eye colour" in skip_rows
+    _avoid_tattoos[0] = "subject:tattoos" in skip_rows
+    _avoid_piercings[0] = "subject:piercings" in skip_rows
     try:
         return _wildcard_picks(conn, rng or random.Random(), tiers, show_adult, scenes, scene_chance, locked, detail,
                                adult_chance, set(skip_rows))
     finally:
         _avoid_eye_colour[0] = False
+        _avoid_tattoos[0] = False
+        _avoid_piercings[0] = False
         _avoid_clothing[0] = False
+        _avoid_body_shape[0] = False
 
 
 def _wildcard_picks(conn, rng, tiers, show_adult, scenes, scene_chance, locked, detail, adult_chance, skip_rows):
 
     standalone = not scenes
     picks = {s: list(v) for s, v in (locked or {}).items() if v}
+    locked_subject_keys = {row_key(e).split(":", 1)[1] for e in picks.get("subject", [])}
+    _avoid_body_shape[0] = bool({"body", "bust size", "bust shape"} & locked_subject_keys)
     skip = set()
     for section, entries in picks.items():
         if section != "subject":
@@ -193,11 +211,15 @@ def _wildcard_picks(conn, rng, tiers, show_adult, scenes, scene_chance, locked, 
             picks[section] = [entry]
             skip |= sections_described_by(entry)
     _avoid_clothing[0] = "clothing" in picks or "clothing" not in skip
+    action_entry = picks.get("action", [None])[0]
+    action_claims_body_shape = action_entry is not None and entry_mentions_body_shape(action_entry)
     subject = list(picks.get("subject", []))
     have = {row_key(e).split(":", 1)[1] for e in subject}
     for key, _label, _slots, chance in SUBJECT_ROWS:
         if key in have or "subject:" + key in skip_rows:
             continue
+        if action_claims_body_shape and key in ("body", "bust size", "bust shape"):
+            continue   # the action already names its own bust size/shape or build; a second one would clash
         if key != "age" and rng.random() > min(1.0, chance * detail):
             continue
         entry = _draw_subject_row(conn, rng, key, subject, tiers, False)
@@ -211,12 +233,20 @@ def _wildcard_picks(conn, rng, tiers, show_adult, scenes, scene_chance, locked, 
 def reroll(conn, rng, row, picks, tiers=("basic", "detailed"), show_adult=False, adult_chance=0.3, skip_rows=()):
     """A fresh entry for one builder row ('action', 'clothing'..., or 'subject:<row>') given the rest of the picks."""
     _avoid_eye_colour[0] = "subject:eye colour" in skip_rows
+    _avoid_tattoos[0] = "subject:tattoos" in skip_rows
+    _avoid_piercings[0] = "subject:piercings" in skip_rows
     _avoid_clothing[0] = bool(picks.get("clothing")) and row != "clothing"   # a Clothing pick is in place: avoid a second outfit
+    subject_keys = {row_key(e).split(":", 1)[1] for e in picks.get("subject", [])}
+    body_rows = ("subject:body", "subject:bust size", "subject:bust shape")
+    _avoid_body_shape[0] = bool({"body", "bust size", "bust shape"} & subject_keys) and row not in body_rows
     try:
         return _reroll(conn, rng, row, picks, tiers, show_adult, adult_chance)
     finally:
         _avoid_eye_colour[0] = False
+        _avoid_tattoos[0] = False
+        _avoid_piercings[0] = False
         _avoid_clothing[0] = False
+        _avoid_body_shape[0] = False
 
 
 def _reroll(conn, rng, row, picks, tiers, show_adult, adult_chance):

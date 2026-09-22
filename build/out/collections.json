@@ -3330,6 +3330,42 @@
   "notes": ""
  },
  {
+  "id": "XXX_Prompts_SMG_Batch1",
+  "source_file": "XXX/XXX_Prompts_SMG_Batch1.txt",
+  "display_name": "XXX Prompts – SMG Batch 1",
+  "section": "action",
+  "slot": "adult scenes",
+  "tier": "scene",
+  "group": "Adult",
+  "group_rank": 21,
+  "facets": {
+   "posture": {
+    "other": 2389,
+    "lying and reclining": 230,
+    "kneeling": 192,
+    "sitting": 82,
+    "bending and stretching": 72,
+    "standing": 17,
+    "leaning": 12,
+    "walking and moving": 6
+   }
+  },
+  "theme": [],
+  "format": "plain",
+  "covers": [
+   "environment",
+   "lighting",
+   "clothing"
+  ],
+  "content_level": "explicit",
+  "weight": 1.0,
+  "thin_near_dups": false,
+  "requires_reference": false,
+  "enabled": true,
+  "entry_count": 3000,
+  "notes": ""
+ },
+ {
   "id": "Age",
   "source_file": "Drafted/Age/Age.txt",
   "display_name": "Age",

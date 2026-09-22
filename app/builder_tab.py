@@ -18,7 +18,11 @@ PICKER_LIMIT = 500
 DETAIL_LEVELS = [("Minimal", 0.4), ("Normal", 1.0), ("Rich", 1.6)]
 BUILDER_SECTIONS = ["clothing", "action", "environment", "camera", "lighting", "style"]
 # rows that can be switched to "None": left out of every prompt (e.g. a character LoRA already fixes the eye colour)
-NONE_ROWS = {"subject:eye colour": "None — leave eye colour out of the prompt"}   # first item in that row's list
+NONE_ROWS = {
+    "subject:eye colour": "None — leave eye colour out of the prompt",
+    "subject:tattoos": "None — leave tattoos out of the prompt",
+    "subject:piercings": "None — leave piercings out of the prompt",
+}   # first item in that row's list
 NONE_ID = "__none__"
 NONE_ROW_TEXT = "None — left out of the prompt"
 EMPTY_PROMPT_HINT = "Press Wildcard, or Choose... on any row, to start building a prompt."
@@ -518,17 +522,29 @@ class BuilderTab(QWidget):
         return composer.compose(self.current_picks())
 
     def _update_warnings(self):
-        """Flag rows picked by hand that clash with something else: text that names an eye colour while Eye colour is
-        None, and a pose (or other detail) that names clothing while the Clothing row has its own pick."""
+        """Flag rows picked by hand that clash with something else: text that names an eye colour, tattoo or piercing
+        while that row is None, a pose (or other detail) that names clothing while the Clothing row has its own pick,
+        and a pose (or other detail) that names a bust size/shape or build while a Subject body/bust row has its own
+        pick."""
         eye_none = self.rows["subject:eye colour"].none
+        tattoos_none = self.rows["subject:tattoos"].none
+        piercings_none = self.rows["subject:piercings"].none
         clothing_picked = self.rows["clothing"].entry is not None
+        body_rows = ("subject:body", "subject:bust size", "subject:bust shape")
+        body_shape_picked = any(self.rows[k].entry is not None for k in body_rows)
         for key, row in self.rows.items():
             warnings = []
             if row.entry is not None:
                 if eye_none and composer.mentions_eye_colour(row.entry["text"]):
                     warnings.append("Names an eye colour although Eye colour is None")
+                if tattoos_none and composer.mentions_tattoos(row.entry["text"]):
+                    warnings.append("Names a tattoo although Tattoos is None")
+                if piercings_none and composer.mentions_piercings(row.entry["text"]):
+                    warnings.append("Names a piercing although Piercings is None")
                 if clothing_picked and key != "clothing" and composer.entry_mentions_clothing(row.entry):
                     warnings.append("Names clothing, which may clash with the Clothing row")
+                if body_shape_picked and key not in body_rows and composer.entry_mentions_body_shape(row.entry):
+                    warnings.append("Names a bust size/shape or build, which may clash with the Subject row")
             row.set_warning("; ".join(warnings))
 
     def refresh_preview(self):

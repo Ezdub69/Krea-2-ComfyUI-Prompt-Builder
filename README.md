@@ -30,10 +30,13 @@ Style Details: The image has rose-gold color grading, warm pink highlights, crea
 - **Builder** - one row per part of the prompt, each with **Lock**, **Choose...**, **Reroll** and **Clear**. The **Wildcard**
   button fills everything that is not locked. It picks a pose first, then a setting and clothing that fit it (bed poses get
   bedrooms, pool poses get pools, swimwear only appears by the water, and so on). Options: how much detail to add, which
-  levels of list to use, and whether to allow presets that describe a whole scene.
-- **Character LoRA friendly** - the eye colour row can be set to **None**, so nothing about eye colour appears in the prompt.
+  levels of list to use, and whether to allow presets that describe a whole scene. It also avoids known clashes - a pose
+  never adds a second outfit next to a Clothing pick or a second build next to a locked Body/Bust pick, for example - and
+  flags a warning if you create one of those yourself.
+- **Character LoRA friendly** - the eye colour, tattoos and piercings rows can each be set to **None**, so nothing about
+  them appears in the prompt.
 - **Saved** - keep prompts with notes, load them back into the Builder exactly as they were, search them, export them.
-- **Library** - browse all the presets (about 9,000, in 117 lists), filter by level, switch lists and entries on or off, and
+- **Library** - browse all the presets (about 12,000, in 118 lists), filter by level, switch lists and entries on or off, and
   **add your own lists and entries**. Your additions survive updates.
 - **Reset library** - one button puts the library back exactly as it was on a first install (a backup is made first).
 - **Image Analyser** - browse a folder of generated PNGs and see the prompt, negative prompt, model, LoRAs, seed and sampler
@@ -136,7 +139,7 @@ Each suite builds its own throwaway database and never touches `data/`. Run any 
 | Suite | Covers |
 | --- | --- |
 | `smoke_test.py` | the library database and browser |
-| `builder_test.py` | the Builder, wildcard, locks, rerolls, eye colour None |
+| `builder_test.py` | the Builder, wildcard, locks, rerolls, the None rows, clash avoidance |
 | `user_presets_test.py` | your own lists and entries |
 | `reset_test.py` | Reset library and its backups |
 | `saved_prompts_test.py` | saving, loading, notes, export |
